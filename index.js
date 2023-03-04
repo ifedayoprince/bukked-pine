@@ -1,5 +1,5 @@
-import { PinoResolver } from '/pinosdk/core/pino-protocol.js';
-import Pine from '/pinosdk/core/pine.js';
+import { PinoResolver } from 'https://pino-sdk.vercel.app/core/pino-protocol.js';
+import Pine from 'https://pino-sdk.vercel.app/core/pine.js';
 
 let app = new Pine();
 app.resolve(new PinoResolver(), startPine);
