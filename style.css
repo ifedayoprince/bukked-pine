@@ -1,0 +1,56 @@
+#frame-body {
+	overflow: hidden;
+}
+swiper-slide img {
+	height: 100%;
+}
+swiper-slide {
+	color: white;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.overlay {
+	z-index: 5;
+	background-color: rgba(14,14,14,0.4);
+	display: none;
+}
+.btns {
+	justify-content: space-between;
+}
+.footer {
+	background-color: rgba(14,14,14,0.1);
+}
+.progress div {
+	background-color: var(--pine-theme);
+}
+.author {
+	color: var(--pine-darkfg);
+}
+.button {
+	width: 8vw;
+	padding: 6px;
+	background-color: var(--pine-lightbg);
+	border-radius: 50vw;
+	height: 8vw;
+}
+.info {
+	width: 7vw;
+	height: 7vw;
+}
+.title {
+	max-width: 92vw;
+	text-overflow: ellipsis;
+	white-space: pre-line;
+	word-break: break-all;
+	font-weight: bolder;
+	
+}
+.descS {
+	background-color: rgba(14,14,14,0.9);
+	
+}
+.desc {
+	color: var(--pine-darkfg);
+}
