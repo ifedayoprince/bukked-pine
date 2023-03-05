@@ -52,5 +52,6 @@ swiper-slide {
 	
 }
 .desc {
+	white-space: pre-wrap;
 	color: var(--pine-darkfg);
 }

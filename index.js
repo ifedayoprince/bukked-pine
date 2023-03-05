@@ -25,22 +25,21 @@ async function handleUpdates() {
 	// let images = await app.fetch(`file.${app.params.imgs}`);
 	let author = app.params.author;
 	let desc = await app.fetch(`pine.notes.${app.params.desc}`);
-	
-	desc_el.innerHTML = desc;
+
+	desc_el.innerHTML = desc.data.content;
 	author_el.innerHTML = author;
 	title_el.forEach((v)=>{
 		v.innerHTML = app.params.title;
 	});
 	var out = "";
 	for(var image of app.params.imgs) {
-		let img = (await app.fetch(`file.${image}`)).data;
-		
+		let img = (await app.fetch(`file.${image}`)).data.url; 
 		let slide = `<swiper-slide class="flex items-center h-full" lazy>
 				<img loading="true" src="${img}" class="h-[96vh] rounded-lg" alt="Page ${app.params.imgs.indexOf(image)} of ${app.params.imgs.length}">
 			</swiper-slide>` 
 		out += slide;
 	}
-	
+	slide_el.classList.remove('animate-pulse');
 	slide_el.innerHTML = out;
 }
 function handleSlide() {
