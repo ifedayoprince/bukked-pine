@@ -21,6 +21,6 @@
 		"type": "note", 
 		"title": "Description", 
 		"name": "desc", 
-		"height": "45vh"
+		"height": "medium"
 	}
 ]

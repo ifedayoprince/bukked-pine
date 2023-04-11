@@ -1,6 +1,7 @@
 {
 	"name": "BukKed",
-	"version": "1.0.0", 
+	"version": "1.2.0", 
+	"icon": "%URL%/assets/icon.png", 
 	"description": "Upload e-books to Facebook.", 
 	"author": "Pinocchio Team"
 }
